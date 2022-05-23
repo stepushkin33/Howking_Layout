@@ -1,0 +1,118 @@
+.header__container{
+    display: flex;
+    justify-content: space-between;
+    width: 93%;
+    margin: 0 auto;
+    max-height: 97px;
+    margin-bottom: 79px;
+}
+
+.nav{
+    display: flex;
+    margin: auto 0;
+        &__burger-btn{
+            height: 56px;
+            width: 56px;
+            border: 1px solid #4C858B;
+            border-radius: 56px;
+            background-image: url("/assets/images/burger-menu.svg");
+            background-repeat: no-repeat;
+            background-size: 22px;
+            background-position: center;
+            margin-right: 31px;
+        }
+
+        &__list{
+            min-width: 665px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__item{
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 23px;
+            text-transform: uppercase;
+            color: #4C858B;
+        }
+    }
+    
+.tel-link {
+    margin: auto 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.08em;
+    color: #4C858B;
+        &--bold{
+            font-weight: bold;
+            color: #000000;
+        }
+}
+
+.callme-btn{
+    margin: auto 0;
+    width: 156px;
+    min-height: 24px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #AE2236;
+    border-bottom: 2px dotted #AE2236   
+}
+
+.head-func {
+    width: 200px;
+    margin: auto 0;
+    display: flex;
+    justify-content: space-between;
+        &__btn{
+            width: 56px;
+            height: 56px;
+            border: 1px solid #e5e5e5;
+            border-radius: 56px;
+            background-size: 24px;
+            background-repeat: no-repeat;
+            background-position: center 15px;
+        }
+}
+
+.btn_shopping{
+    position: relative;
+    background-size: 35px;
+    background-image: url("/assets/images/shopping-cart-icon.svg");
+        &::after{
+            content:"10";
+            position: absolute;
+            width: 21px;
+            height: 21px;
+            border-radius: 21px;
+            background-color: #E33E54;
+            align-items: center;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 11px;
+            line-height: 13px;
+            color: #FFFFFF;
+            padding-top: 4px;
+            top: 0;
+            right: 0;
+        }
+}
+
+.btn_search{
+    background-image: url("/assets/images/search-icon.svg");
+}
+
+.btn_favourites{
+    background-image: url("/assets/images/heart-icon.svg");
+}

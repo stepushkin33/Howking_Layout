@@ -1,0 +1,8 @@
+section.section.section__offset.section__container
+    h2.section__title Почему Дымоход.ру?
+    p.advants__presentation В&nbsp;отличие от&nbsp;других производителей, мы&nbsp;ручаемся за&nbsp;качество продукции, т.к. все Дымоходы изготавливаются из&nbsp;качественной стали, проверенного теплоизолятора, по&nbsp;современной технологии плазменной сварки &laquo;встык&raquo;
+    ul.advans__list
+        each advant in advantsList
+            li.advants__item(style=advant.style)
+                h3.advants__title=advant.title
+                p.advants__descr !{advant.descr}

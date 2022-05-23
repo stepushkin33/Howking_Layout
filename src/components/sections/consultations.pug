@@ -1,0 +1,14 @@
+section.consultations.section__offset.section__container
+    h2.consultations__title необходима консультация?
+    p.consultations__descr оставьте заявку или свяжитесь с нами в социальных сетях
+    +social(consultations__social)
+    form.consultation-form(action="https://jsonplaceholder.typicode.com/posts" method="post")
+        p.consultation-form__title Для #[strong консультации] заполните форму!
+        span.consultation-form__descr С Вами свяжутся в ближайшее время
+        .consultation-form__actions
+            label.consultation-form__input
+                input.imput-reset(type="text" placeholder="Ваше имя" maxlength="50" name="name" required)
+            label.consultation-form__input
+                input.input-reset(type="tel" placeholder="Ваш телефон" maxlength="12" minlenght="11" name="phone" required)
+            label.consultation-form__button
+                button.btn-reset(type="submit") отправить

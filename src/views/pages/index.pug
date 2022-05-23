@@ -1,0 +1,56 @@
+extends ../layouts/default
+include ../helpers/mixins
+
+block content
+  include ../../components/sections/hero
+  include ../../components/sections/recommendations
+  include ../../components/sections/process
+  include ../../components/sections/advants
+  include ../../components/sections/consultations
+  include ../../components/sections/video
+  include ../../components/sections/gallery
+
+block variables
+  -
+    var navigations = [
+      {title: "Каталог товаров", link: "#"},
+      {title: "Доставка и оплата", link: "#"}, {title: "Цены", link: "#"},
+      {title: "Контакты", link: "#"}]
+    var pageNavigations = [
+      {title: "Главная", link: "#"},
+      {title:"Монтаж дымоходов", link:"#"}]
+    var recommendList = ["Доступные цены", "Собственное производсвто  Дымоходов","Выполнение необходимых работ, связанных c установкой камина, печи, котла","Гарантия (от трёх до десяти лет)","Работаем чисто, аккуратно, убираем за собой, не сквернословим","Только русские квалифицированные специалисты","Устанавливаем любые дымоходы всех производителей"]
+    var processList = ["Рассчёт предварительной заявки", "Замер объекта нашим инженером", "Составление Коммерческого предложения по изделиям дымохода и окончательной сметы на работы", "Изготовление Дымохода, покраска (если требуется)", "Монтаж продукции, проверка и наладкапробный запуск системы и последующая эксплуатация", "Гарантийное обслуживание по соответствующем сроку"]
+    var advantsList = [
+      {title: "Большой гарантийный срок", style: "advants__warranty",
+        descr: "Крепёж, стыковка элементов – <span>10 лет</span> Сквозная коррозия труб – <span>5 лет</span> Гидроизоляция – <span>3 года</span>"},
+      {title: "Помощь в покупке агрегата ", style: "advants__help", descr: "(печи, камина, котла), а также качественной установке на объекте последующим гарантийным сервисом"},
+      {title: "Реальные отзывы клиентов", style: "advants__reviews", descr: "Убедитесь в добросовестности исполнения, прочитав Отзывы клиентов в специальном разделе."}]
+    var photoes = [
+      {src: "assets/images/photo1.png", alt: "photo1"},
+      {src: "assets/images/photo2.png", alt: "photo2"},
+      {src: "assets/images/photo3.png", alt: "photo3"},
+      {src: "assets/images/photo4.png", alt: "photo4"},
+      {src: "assets/images/photo5.png", alt: "photo5"},
+      {src: "assets/images/photo6.png", alt: "photo6"},
+      {src: "assets/images/photo7.png", alt: "photo7"},
+      {src: "assets/images/photo8.png", alt: "photo8"}]
+    var catalogs = [
+      {title:"Дымоходы", link:"#"},
+      {title:"Дымососы", link:"#"},
+      {title:"Печи для дома", link:"#"},
+      {title:"Печи для бани", link:"#"},
+      {title:"Камины", link:"#"},
+      {title:"Силикат кальция", link:"#"},
+      {title:"Котлы", link:"#"},
+      {title:"Ещё", link:"#"}]
+    var informations = [
+      {title:"Каталог", link:"#"},
+      {title:"Установка и монтаж", link:"#"},
+      {title:"Отзывы", link:"#"},
+      {title:"Ликвидация товара", link:"#"},
+      {title:"Полезное", link:"#"},
+      {title:"Контакты", link:"#"},
+      {title:"Оплата и доставка", link:"#"}]
+    
+

@@ -1,0 +1,26 @@
+block variables
+header.header__container
+    .logo
+        img.logo__img(src="/assets/images/Logo.png")
+    nav.nav
+        button.nav__burger-btn
+        ul.nav__list 
+            each navigation in navigations 
+                li.nav__item 
+                    a.nav__link(href=navigation.link)=navigation.title 
+    a.tel-link(href="tel:+78125092198") +7 (812) 
+            bold.tel-link--bold 509 21 98
+    button.callme-btn перезвоните мне
+    +social(header__social)
+    .head-func
+        button.head-func__btn.btn_search 
+        button.head-func__btn.btn_favourites
+        button.head-func__btn.btn_shopping 
+
+
+
+            
+
+            
+
+    
