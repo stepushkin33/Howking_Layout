@@ -1,26 +1,30 @@
 footer.footer__container.footer__offset
     .footer__content
-        .catalog
-            h3.content__title
-            ul.catalog__list
+        .foo-section.catalog__section
+            h3.foo-section__title каталог
+            ul.foo-section__list
                 each item in catalogs
-                    li.catalog__item 
-                        a.catalog__link(href=item.link)=item.title
-        .infomation
-            h3.content__title
-            ul.information__list
+                    li.foo-section__item.catalog__item
+                        a.foo-section__link(href=item.link)=item.title
+        .foo-section.information__section
+            h3.foo-section__title информация
+            ul.foo-section__list
                 each inf in informations
-                    li.information__item 
-                        a.information__link(href=inf.link)=inf.title
-        .time-and-contacts
-            h3.content__title
-            ul.time__list
-                li.time__item 
-                    p.time__item_day пн-пт
-                        span.time__item_time 9:00 - 20:00
-                li.time__item 
-                    p.time__item_day сб-вс
-                        span.time__item_time 10:00 - 18:00
-        +social(footer__social)
+                    li.foo-section__item.information__item
+                        a.foo-section__link(href=inf.link)=inf.title
+        .foo-section.time__section
+            h3.foo-section__title время работы
+            ul.foo-section__list
+                li.foo-section__item.item_days
+                    ul
+                        li.foo-section__item_day пн-пт
+                            span 9:00 - 20:00    
+                        li.foo-section__item_day сб-вс
+                            span 10:00 - 18:00 
+                li.foo-section__item.item__address
+                    address г. Санкт - Петербург ,ул. Тамбасова д.7
+                li.foo-section__item
+                    .footer__social
+                        +social()
                 
 

@@ -1,0 +1,47 @@
+.video {
+    &__title {
+        margin-left: -2px;
+        margin-bottom: 50px !important;
+    }
+
+    &__descr {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+        color: #000000;
+        margin-bottom: 50px;
+    }
+
+    &__view {
+        padding-top: 50px;
+        max-width: 1218px;
+        max-height: 487px;
+        background-size: 1156px 406px;
+        background-repeat: no-repeat;
+        background-position: 45px 0;
+        background-image: url("/assets/images/video-background.svg");
+        margin-left: -10px;
+    }
+
+    &__image {
+        position: relative;
+        max-width: 771px;
+        max-height: 438px;
+        margin: 0 auto;
+    }
+
+    &__image::after {
+        position: absolute;
+        content: "";
+        width: 41px;
+        height: 41px;
+        background-size: 41px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url("/assets/images/play-button.svg");
+        top: 43%;
+        left: 46%;
+    }
+}

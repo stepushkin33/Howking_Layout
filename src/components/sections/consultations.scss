@@ -1,0 +1,97 @@
+.consultations {
+    margin-bottom: 127px !important;
+    &__title {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 50px;
+        line-height: 40px;
+        text-transform: uppercase;
+        color: #000000;
+        margin-bottom: 10px;
+        margin-top: -7px;
+        padding-left: 13%;
+
+    }
+
+    &__descr {
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 40px;
+        text-align: center;
+        color: #000000;
+        margin-bottom: 33px;
+    }
+
+    &__social {
+        margin-left: calc(50% - 107px);
+        margin-bottom: 39px;
+        
+    }
+}
+
+.consultation-form {
+    max-width: 866px;
+    width: 100%;
+    min-height: 260px;
+    margin: 0 auto;
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.15);
+    padding-top: 61px;
+    padding-left: 55px;
+
+        &__title {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 22px;
+            color: #000000;
+            margin-bottom: 12px;
+        }
+
+        &__title strong {
+            font-weight: 700;
+            color: #EA6628;
+        }
+
+        &__descr {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 30px;
+            color: #000000;
+        }
+
+        &__input {
+            box-sizing: border-box;
+            width: 240px;
+            height: 56px;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 22px;
+            color: #000;
+            margin-top: 22px;
+            margin-right: 10px;
+            padding-top: 17px;
+            padding-bottom: 17px;
+            padding-left: 17px;
+            border-radius: 4px;
+        }
+
+        &__button{
+            width: 240px;
+            height: 56px;
+            background-color: #215359;
+            border-radius: 4px;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+}
