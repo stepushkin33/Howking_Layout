@@ -1,3 +1,5 @@
+@import 'helpers/variables.scss';
+@import 'helpers/mixins.scss';
 @import 'base/fonts';
 @import 'base/globals';
 
@@ -5,3 +7,4 @@
 @import '../components/components';
 
 @import 'helpers/media.scss';
+

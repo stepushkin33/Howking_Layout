@@ -14,15 +14,9 @@
     align-items: center;
     position: relative;
     height: 85px;
-    width: calc(50% - 14px);
-    padding-left: 71px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 30px;
-    margin-right: 28px;
-    color: #000000;
+    width: calc(50% - 28px);
+    padding-left: 81px;
+    @include classic-font;
         &:not(:nth-child(3n)) {
             margin-bottom: 12px;
         }

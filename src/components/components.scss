@@ -82,9 +82,10 @@ body {
     width: 100%;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    background-color: #FFFFFF;
+    background-color: $backgroung-color;
     margin: 0;
     padding-top: 25px;
+    transition: background-color 0.3s ease-in-out ;
 }
 
 
@@ -92,6 +93,7 @@ body {
 
 h1, h2, h3{
     margin: 0;
+    transition: color 0.3s ease-in-out;
 }
 
 li{
@@ -99,11 +101,13 @@ li{
     padding: 0;
     list-style: none;
     display: inline-block;
+    transition: 0.3s ease-in-out;
 }
 
 ul,ol,p{
     padding: 0;
     margin: 0;
+    transition: 0.3s ease-in-out;
 }
 
 button{
@@ -111,6 +115,7 @@ button{
     border: none;
     background-color: transparent;
     cursor: pointer;
+    transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 a {
@@ -142,7 +147,7 @@ figure {
     font-weight: 600;
     font-size: 40px;
     line-height: 49px;
-    color: #000000;
+    color: $text-color;
     margin-bottom: 35px;
 }
 
@@ -151,7 +156,7 @@ figure {
     position: absolute;
     width: 74px;
     height: 5px;
-    background-color: #E33E54;
+    background-color: $strong-color;
     top: -17px;
 }
 
@@ -199,7 +204,32 @@ figure {
     margin-bottom: 105px;
 }
 
+.body--dark{ 
+    background-color: #353b39;
+}
 
+.body--light {
+    background-color: #ffffff;
+}
+
+.dark-text {
+    color: #ffffff;
+    &::before {
+        opacity: 1;
+    }
+}
+
+.svg--dark {
+    fill:rgba(234, 102, 40, 1);
+}
+
+.light-text {
+    color: #000000;
+}
+
+.dark-spans {
+    color: #E33E54;
+}
 
 
 

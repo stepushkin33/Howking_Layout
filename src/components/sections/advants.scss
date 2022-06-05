@@ -1,11 +1,6 @@
 .advants{
     &__presentation {
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 30px;
-        color: #000000;
+        @include classic-font;
         margin-bottom: 50px;
     }
 
@@ -36,12 +31,7 @@
     }
 
     &__descr {
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 30px;
-        color: #000000;
+        @include classic-font;
     }
 
     &__descr span {

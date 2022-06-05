@@ -55,12 +55,7 @@
         }
 
         &__descr {
-            font-family: 'Montserrat';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 30px;
-            color: #000000;
+           @include classic-font;
         }
 
         &__input {
