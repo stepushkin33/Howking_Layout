@@ -4,7 +4,8 @@ const mainBackground = document.querySelector("body")
 const parag = document.querySelectorAll('p')
 const links = document.querySelectorAll('a')
 const spans = document.querySelectorAll('span')
-const titles = document.querySelectorAll('.section__title')
+const titles = document.querySelectorAll('h2')
+const mainTitle = document.querySelector('h1')
 const semiTitles = document.querySelectorAll('h3')
 const lists = document.querySelectorAll('li')
 const icons = document.querySelectorAll('path')
@@ -41,6 +42,7 @@ function getTheme() {
         icons[i].classList.add("svg--dark")
     }
 
+    mainTitle.classList.add('dark-text')
     themeBtn.textContent = "Тёмная тема"
     themeBtn.classList.toggle('theme-btn--dark')
 }else {
@@ -73,6 +75,7 @@ function getTheme() {
     for(let i = 0; i < icons.length; ++i){
         icons[i].classList.remove("svg--dark")
     }
+    mainTitle.classList.remove('dark-text')
     themeBtn.classList.remove('theme-btn--dark')
     themeBtn.textContent = "Светлая тема"
 }
